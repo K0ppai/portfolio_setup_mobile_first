@@ -1,92 +1,85 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
-body{
+
+body {
   width: 100%;
   height: auto;
-  
 }
-.toolbar-container{
+
+.toolbar-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
+
   /* background-color: aqua; */
   width: 100%;
   height: 48px;
-
-  
- 
 }
 
-.toolbar-icon{
+.toolbar-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-
   position: absolute;
   width: 40px;
   height: 40px;
   right: 30px;
   top: 48px;
-  
-
   border-radius: 8px;
-
 }
 
-.toolbar-container .toolbar-icon img{
+.toolbar-container .toolbar-icon img {
   width: 40px;
   height: auto;
 }
-.headline{
+
+.headline {
   display: flex;
   flex-direction: column;
   align-content: center;
   width: 630.38px;
-  height: 653.32px; 
+  height: 653.32px;
 }
-.greeting{
+
+.greeting {
   position: absolute;
   width: 327px;
   height: 211px;
   left: 27px;
   top: 156px;
-
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-
   text-align: center;
+  color: #172b4d;
+}
 
-  color: #172B4D;
+.greeting span {
+  color: #36b37e;
 }
-.greeting span{
-  color: #36B37E;
-}
-.article{
+
+.article {
   position: absolute;
   width: 327px;
   height: 164px;
   left: 27px;
   top: 382px;
-
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-
   text-align: center;
 }
 
-.background-image{
+.background-image {
   display: flex;
   justify-content: center;
-
   position: absolute;
   width: 630.38px;
   height: 653.32px;
@@ -94,19 +87,24 @@ body{
   top: 92.8px;
 }
 
-.social-media-icon-container{
+.social-media-icon-container {
   display: flex;
   position: absolute;
   width: 170.17px;
   height: 19.62px;
   left: 105px;
   top: 568.89px;
+}
 
-}
-.social-media-icon{
+.social-media-icon {
   margin-right: 20px;
-  
 }
+
+.social-media-icon:active {
+  transform: scale3d(0.8,0.8,0.8);
+}
+
+
 @media screen {
-  
+
 }
