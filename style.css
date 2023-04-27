@@ -3,9 +3,12 @@
   padding: 0;
 }
 
-body {
+.container {
   width: 100%;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .toolbar-container {
@@ -13,7 +16,12 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-
+  
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 44px;
+  bottom: 0px;
   /* background-color: aqua; */
   width: 100%;
   height: 48px;
@@ -24,10 +32,9 @@ body {
   align-items: center;
   justify-content: center;
   position: absolute;
-  width: 40px;
+  width: 10.67%;
   height: 40px;
-  right: 30px;
-  top: 48px;
+  right: 24px;
   border-radius: 8px;
 }
 
@@ -40,13 +47,15 @@ body {
   display: flex;
   flex-direction: column;
   align-content: center;
-  width: 630.38px;
+  width: 168.1013333333333%;
   height: 653.32px;
+  left: -33.70%;
+  top: 92.8px;
 }
 
 .greeting {
   position: absolute;
-  width: 327px;
+  width: 87.2%;
   height: 211px;
   left: 27px;
   top: 156px;
@@ -65,7 +74,7 @@ body {
 
 .article {
   position: absolute;
-  width: 327px;
+  width: 87.2%;
   height: 164px;
   left: 27px;
   top: 382px;
@@ -78,22 +87,24 @@ body {
 }
 
 .background-image {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  width: 630.38px;
-  height: 653.32px;
-  left: -126.38px;
+  position: relative;
+  left: -33.7%;
   top: 92.8px;
 }
-
+.background-image img{
+  width: 168.1%;
+  height: 653.32px;
+}
 .social-media-icon-container {
   display: flex;
   position: absolute;
-  width: 170.17px;
+  justify-content: center;
+  align-items: center;
+  width: 45.379%;
   height: 19.62px;
-  left: 105px;
+  left: 28%;
   top: 568.89px;
+  margin-top: 24.85px;
 }
 
 .social-media-icon {
@@ -105,6 +116,17 @@ body {
 }
 
 
-@media screen {
-
+@media screen and (min-width: 768px){
+  .headline{
+    background-color: #172b4d;
+    position: absolute;
+    width: 191.7708333333333%;
+    height: 183.26171875%;
+    left: 3.515%;
+    top: -50.8528%;
+    background-image: url(Header-llustration-desktop.svg) ;
+  }
+  .greeting,.article{
+    width: 63.89%;
+  }
 }
