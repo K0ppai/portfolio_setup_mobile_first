@@ -93,6 +93,20 @@ body{
   left: -126.38px;
   top: 92.8px;
 }
+
+.social-media-icon-container{
+  display: flex;
+  position: absolute;
+  width: 170.17px;
+  height: 19.62px;
+  left: 105px;
+  top: 568.89px;
+
+}
+.social-media-icon{
+  margin-right: 20px;
+  
+}
 @media screen {
   
 }
